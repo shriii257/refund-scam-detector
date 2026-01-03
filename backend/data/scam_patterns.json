@@ -1,0 +1,105 @@
+{
+  "urgency_keywords": [
+    "urgent",
+    "immediately",
+    "within 24 hours",
+    "expire",
+    "expired",
+    "last chance",
+    "act now",
+    "limited time",
+    "hurry",
+    "quick",
+    "account will be blocked",
+    "legal action",
+    "suspended",
+    "locked",
+    "deadline"
+  ],
+  "payment_keywords": [
+    "send money",
+    "pay",
+    "payment",
+    "transfer",
+    "deposit",
+    "recharge",
+    "google pay",
+    "gpay",
+    "phonepe",
+    "paytm",
+    "upi",
+    "qr code",
+    "scan code",
+    "screen share",
+    "anydesk",
+    "teamviewer",
+    "remote access",
+    "install app"
+  ],
+  "otp_keywords": [
+    "otp",
+    "one time password",
+    "verification code",
+    "6 digit code",
+    "cvv",
+    "pin",
+    "password",
+    "share otp",
+    "tell me otp",
+    "send otp",
+    "confirm otp",
+    "enter code"
+  ],
+  "suspicious_phrases": [
+    "refund process",
+    "verification fee",
+    "processing charge",
+    "processing fee",
+    "courier charges",
+    "delivery charges",
+    "gst payment",
+    "activation fee",
+    "registration fee",
+    "wrong payment",
+    "cancelled order",
+    "bank verification",
+    "account verification",
+    "kyc update",
+    "kyc verification",
+    "confirm identity",
+    "update details",
+    "reversal charges"
+  ],
+  "scam_scenarios": [
+    {
+      "name": "Fake Refund Call",
+      "description": "Caller claims you're entitled to a refund but need to pay processing fee",
+      "risk": "HIGH",
+      "indicators": ["payment required", "processing fee", "urgent"]
+    },
+    {
+      "name": "OTP Phishing",
+      "description": "Caller asks for OTP to 'verify' or 'process' refund",
+      "risk": "CRITICAL",
+      "indicators": ["otp request", "verification code", "confirm code"]
+    },
+    {
+      "name": "Screen Share Scam",
+      "description": "Caller asks to install AnyDesk/TeamViewer for 'assistance'",
+      "risk": "CRITICAL",
+      "indicators": ["anydesk", "teamviewer", "screen share", "remote access"]
+    },
+    {
+      "name": "Wrong Payment Scam",
+      "description": "Claim of wrong payment made to your account, asking for return",
+      "risk": "HIGH",
+      "indicators": ["wrong payment", "mistaken transfer", "return money"]
+    },
+    {
+      "name": "QR Code Scam",
+      "description": "Asking to scan QR code to 'receive' refund (actually deducts money)",
+      "risk": "CRITICAL",
+      "indicators": ["scan qr", "qr code", "scanner"]
+    }
+  ]
+}

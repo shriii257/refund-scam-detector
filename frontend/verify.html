@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Refund Request - Scam Detector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="shield-icon">🛡️</span>
+                <span>Refund Scam Detector</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="verify.html" class="active">Verify Refund</a>
+                <a href="education.html">Learn More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="verify-header">
+                <h1>🔍 Verify Refund Request</h1>
+                <p>Fill in the details below to analyze if this refund request is legitimate or a scam</p>
+                <div class="privacy-note">
+                    <span>🔒</span> Your data is processed locally and not stored permanently
+                </div>
+            </div>
+
+            <!-- Verification Form -->
+            <form id="verificationForm" class="verification-form">
+                <!-- Platform Information -->
+                <div class="form-section">
+                    <h3>Platform Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="platform">
+                            Which platform is this refund from? *
+                        </label>
+                        <select id="platform" name="platform" required>
+                            <option value="">Select Platform</option>
+                            <option value="Amazon">Amazon</option>
+                            <option value="Flipkart">Flipkart</option>
+                            <option value="Meesho">Meesho</option>
+                            <option value="Myntra">Myntra</option>
+                            <option value="Ajio">Ajio</option>
+                            <option value="PhonePe">PhonePe</option>
+                            <option value="PayTM">PayTM</option>
+                            <option value="Google Pay">Google Pay</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section">
+                    <h3>Contact Details</h3>
+                    
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number of Caller *
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="e.g., 9876543210 or +91-9876543210"
+                            required
+                        >
+                        <small>Enter the number that contacted you</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="upi_id">
+                            UPI ID Provided (if any)
+                        </label>
+                        <input 
+                            type="text" 
+                            id="upi_id" 
+                            name="upi_id" 
+                            placeholder="e.g., merchant@paytm or name@oksbi"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bank_name">
+                            Bank Name Mentioned (if any)
+                        </label>
+                        <input 
+                            type="text" 
+                            id="bank_name" 
+                            name="bank_name" 
+                            placeholder="e.g., HDFC, SBI, ICICI"
+                        >
+                    </div>
+                </div>
+
+                <!-- Critical Questions -->
+                <div class="form-section critical-section">
+                    <h3>⚠️ Critical Questions</h3>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="asked_money" 
+                                name="asked_money"
+                            >
+                            <span>Were you asked to SEND or PAY money to receive the refund?</span>
+                        </label>
+                        <small class="warning-text">
+                            ⚠️ Legitimate refunds NEVER require you to send money first
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="asked_otp" 
+                                name="asked_otp"
+                            >
+                            <span>Were you asked to share OTP, PIN, or CVV?</span>
+                        </label>
+                        <small class="warning-text">
+                            ⚠️ No company EVER asks for OTP - this is a major red flag
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Message Description -->
+                <div class="form-section">
+                    <h3>Message/Call Description</h3>
+                    
+                    <div class="form-group">
+                        <label for="description">
+                            Describe the call or message content *
+                        </label>
+                        <textarea 
+                            id="description" 
+                            name="description" 
+                            rows="6"
+                            placeholder="Example: 'They called saying my order was cancelled and I'll get a refund of ₹2000, but I need to pay ₹50 processing fee first. They asked me to install an app called AnyDesk...'"
+                            required
+                        ></textarea>
+                        <small>Include as much detail as possible - keywords, phrases, requests made</small>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                        🔍 Analyze Risk Level
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        Clear Form
+                    </button>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="loading-state" style="display: none;">
+                    <div class="loader"></div>
+                    <p>Analyzing your submission...</p>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+            </form>
+
+            <!-- Quick Tips -->
+            <div class="quick-tips">
+                <h3>💡 Quick Safety Tips</h3>
+                <ul>
+                    <li><strong>Legitimate refunds are automatic</strong> - They appear in your original payment method without any action needed</li>
+                    <li><strong>Never share OTP</strong> - Even if caller claims to be from your bank or platform</li>
+                    <li><strong>Verify independently</strong> - Log into the official app/website to check refund status</li>
+                    <li><strong>No processing fees</strong> - You should never pay money to receive a refund</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <strong>Privacy Notice:</strong> All analysis is done locally. We do not store your personal information.<br>
+                This is an educational tool. Always verify through official channels.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/verify.js"></script>
+</body>
+</html>

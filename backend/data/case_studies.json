@@ -1,0 +1,141 @@
+{
+  "case_studies": [
+    {
+      "id": 1,
+      "title": "The Amazon Refund Trap",
+      "platform": "Amazon",
+      "victim_profile": "Software Engineer, Age 28, Bangalore",
+      "amount_lost": "₹45,000",
+      "timeline": "December 2024",
+      "incident": {
+        "description": "Victim received a call from someone claiming to be from Amazon customer care. The caller had the victim's order details and said a refund of ₹1,200 was pending due to a cancelled order.",
+        "hook": "The caller knew specific order details, making it seem legitimate",
+        "scam_execution": [
+          "Caller asked victim to install 'AnyDesk' app for 'verification'",
+          "Once installed, scammer gained remote access to victim's phone",
+          "Scammer navigated to banking app while distracting victim",
+          "Multiple transactions were made totaling ₹45,000"
+        ],
+        "red_flags_missed": [
+          "Amazon never calls proactively for refunds",
+          "Request to install third-party app",
+          "Remote access request is never legitimate",
+          "Urgency created: 'Refund will expire in 24 hours'"
+        ]
+      },
+      "outcome": "Victim reported to cybercrime portal. Bank partially recovered ₹15,000. Case under investigation.",
+      "lessons": [
+        "Never install remote access apps on anyone's request",
+        "Amazon processes refunds automatically through the app/website",
+        "Verify independently by logging into your account",
+        "No legitimate company asks for screen access"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Flipkart OTP Phishing",
+      "platform": "Flipkart",
+      "victim_profile": "Homemaker, Age 35, Mumbai",
+      "amount_lost": "₹28,500",
+      "timeline": "January 2025",
+      "incident": {
+        "description": "Victim received SMS about a ₹2,500 refund for a cancelled Flipkart order. Message included a phone number to call for 'faster processing'.",
+        "hook": "Professional-looking SMS with Flipkart branding",
+        "scam_execution": [
+          "Victim called the number from SMS",
+          "Scammer asked for 'account verification' using OTP",
+          "Victim received actual OTP from bank (scammer initiated transaction)",
+          "Victim shared OTP thinking it was for Flipkart verification",
+          "₹28,500 was immediately debited from bank account"
+        ],
+        "red_flags_missed": [
+          "Flipkart never asks to call for refunds",
+          "OTP sharing is NEVER required for refunds",
+          "Pressure to act quickly",
+          "Phone number in SMS was not official Flipkart number"
+        ]
+      },
+      "outcome": "Victim filed FIR and complaint on cybercrime.gov.in. Money not recovered as transferred to multiple accounts.",
+      "lessons": [
+        "NEVER share OTP with anyone - even if they claim to be from bank/company",
+        "OTP is only for YOUR use when YOU initiate a transaction",
+        "Verify sender's number with official website contact",
+        "Banks never ask for OTP over phone"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Meesho QR Code Scam",
+      "platform": "Meesho",
+      "victim_profile": "Student, Age 22, Delhi",
+      "amount_lost": "₹12,000",
+      "timeline": "November 2024",
+      "incident": {
+        "description": "Victim received WhatsApp message about a Meesho order refund. Message included a 'customer care executive' contact.",
+        "hook": "WhatsApp message with Meesho logo and order number",
+        "scam_execution": [
+          "Victim contacted the 'executive' on WhatsApp",
+          "Scammer sent a QR code image",
+          "Said 'scan this to receive your refund of ₹800'",
+          "Victim scanned QR code using payment app",
+          "Instead of receiving money, ₹12,000 was deducted"
+        ],
+        "red_flags_missed": [
+          "Refunds are credited automatically, not via QR codes",
+          "QR codes are for making payments, not receiving them",
+          "Communication via WhatsApp instead of official app",
+          "Grammar errors in messages"
+        ]
+      },
+      "outcome": "Victim blocked scammer and reported to bank. ₹3,000 recovered by freezing receiving account.",
+      "lessons": [
+        "QR codes DEDUCT money, they never add money to your account",
+        "Refunds are always credited directly to original payment method",
+        "Don't trust WhatsApp messages claiming to be from companies",
+        "Check Meesho app directly for refund status"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "PhonePe Wrong Payment Scam",
+      "platform": "PhonePe",
+      "victim_profile": "Business Owner, Age 42, Pune",
+      "amount_lost": "₹67,000",
+      "timeline": "December 2024",
+      "incident": {
+        "description": "Victim received ₹500 in PhonePe account followed by immediate call claiming it was a 'wrong payment' that needs to be returned.",
+        "hook": "Actual money received first, making scam seem legitimate",
+        "scam_execution": [
+          "Scammer sent ₹500 to create trust",
+          "Called victim saying it was a mistake, please return",
+          "Victim agreed to return the ₹500",
+          "Scammer sent a 'payment request link'",
+          "Link was actually for ₹67,500 (extra zero added)",
+          "In hurry, victim approved without checking amount"
+        ],
+        "red_flags_missed": [
+          "Scammer creating urgency and emotional pressure",
+          "Not verifying exact amount before approving",
+          "Trusting caller without proper verification",
+          "Not using official PhonePe support"
+        ]
+      },
+      "outcome": "FIR filed. Scammer's account traced but money already withdrawn. Partial recovery pending.",
+      "lessons": [
+        "Always check payment amount before confirming",
+        "Wrong payments can be reversed by bank, no need to send back",
+        "Contact PhonePe support directly for such issues",
+        "Don't act under pressure or emotional manipulation"
+      ]
+    }
+  ],
+  "statistics": {
+    "total_cases_2024": "58,000+ reported",
+    "average_loss": "₹15,000 - ₹50,000",
+    "most_targeted_age": "25-45 years",
+    "most_common_platform": "Amazon, Flipkart",
+    "recovery_rate": "Less than 20%",
+    "reporting_portal": "cybercrime.gov.in",
+    "helpline": "1930"
+  }
+}
