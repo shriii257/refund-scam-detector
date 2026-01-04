@@ -285,8 +285,3 @@ For questions, suggestions, or collaboration:
 - Open an issue on GitHub
 - Email: shrinivasbiradar@proton.me
 
----
-
-**Remember:** Stay vigilant, verify independently, and never share OTP with anyone!
-
-🛡️ Built with ❤️ for a safer digital India
