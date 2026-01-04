@@ -283,7 +283,7 @@ Always verify through official channels and report scams to:
 
 For questions, suggestions, or collaboration:
 - Open an issue on GitHub
-- Email: [your-email@example.com]
+- Email: shrinivasbiradar@proton.me
 
 ---
 
