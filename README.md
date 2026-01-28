@@ -1,4 +1,4 @@
-# 🛡️ Refund Scam Prevention & Verification System
+#Refund Scam Prevention & Verification System
 
 A comprehensive cybersecurity project that helps users verify whether a refund call, message, or payment request is legitimate or a scam. Built with Flask (Python) backend and vanilla JavaScript frontend.
 
